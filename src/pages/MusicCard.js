@@ -13,6 +13,13 @@ class MusicCard extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const { checked } = this.props;
+    this.setState({
+      checked,
+    });
+  }
+
   inputChecked = (e, checked) => {
     const { target } = e;
     this.setState({
@@ -65,6 +72,7 @@ MusicCard.propTypes = {
   trackName: PropTypes.string.isRequired,
   previewUrl: PropTypes.string.isRequired,
   trackId: PropTypes.number.isRequired,
+  checked: PropTypes.bool.isRequired,
 };
 
 export default MusicCard;
