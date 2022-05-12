@@ -14,7 +14,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div>
           <Switch>
-            <Route exact path="/"><Login /></Route>
+            <Route exact path="/" render={ (props) => <Login { ...props } /> } />
             <Route path="/Search"><Search /></Route>
             <Route path="/Album"><Album /></Route>
             <Route path="/Favorites"><Favorites /></Route>
