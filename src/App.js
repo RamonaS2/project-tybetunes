@@ -15,11 +15,11 @@ class App extends React.Component {
         <div>
           <Switch>
             <Route exact path="/" render={ (props) => <Login { ...props } /> } />
-            <Route path="/Search"><Search /></Route>
-            <Route path="/Album"><Album /></Route>
-            <Route path="/Favorites"><Favorites /></Route>
-            <Route exact path="/Profile"><Profile /></Route>
-            <Route path="/Profile/edit"><ProfileEdit /></Route>
+            <Route path="/search"><Search /></Route>
+            <Route path="/album"><Album /></Route>
+            <Route path="/favorites"><Favorites /></Route>
+            <Route exact path="/profile"><Profile /></Route>
+            <Route path="/profile/edit"><ProfileEdit /></Route>
             <Route><NotFound /></Route>
           </Switch>
         </div>
